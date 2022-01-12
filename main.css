@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: rgb(44, 44, 44);
+}
+
+.header {
+  background-image: url('./assets/pic1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  color: white;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+  width: 50%;
+}
+
+.profile-name {
+  font-size: 70px;
+  margin: 0;
+}
+
+.profile-state {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.profile-description {
+  width: 80%;
+  margin-top: 0;
+}
+
+.links-div {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.fab {
+  font-size: 25px;
+  color: white;
+}
+
+.hire-me {
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: #0078ff;
+  padding: 8px 20px 8px 20px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.hire-me a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-profile-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.profile-img {
+  border-radius: 10px;
+  height: 75%;
+}
+
+.about-me-section {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-card {
+  height: 75%;
+  width: 65%;
+  background-color: white;
+  box-shadow: 0 0 8px rgb(223, 223, 223);
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image-div {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.about-image {
+  height: 90%;
+  margin-left: 10%;
+}
+
+.about-content {
+  padding: 2rem 1rem 0 0;
+  width: 55%;
+}
+
+.about-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.divider {
+  height: 3px;
+  background-color: #0078ff;
+  width: 80px;
+}
+
+.about-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-detail {
+  display: flex;
+}
+
+.about-detail p {
+  margin: 5px 0 5px 0;
+}
+
+.subject {
+  width: 20%;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.about-desc {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200; 
+}
+
+.skills-section {
+  width: 100%;
+  height: 60vh;
+  background-color: #0078ff;
+  position: relative;
+  color: white;
+
+}
+
+.skills-section::before {
+  height: 100%;
+  width: 100%;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(./assets/skill_img_2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw auto;
+  opacity: 0.5;
+}
+
+.skill-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.skills {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projects:focus {
+  height: 100vh;
+
+}
