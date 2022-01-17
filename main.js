@@ -2,15 +2,23 @@
 
 function myFunction() {
   const skills = document.getElementById("skills");
-  const skill = document.querySelectorAll('.skill-bar-progress')
+  const html_progress = document.getElementById('html-progress')
+  const js_progress = document.getElementById('js-progress')
+  const react_progress = document.getElementById('react-progress')
+  const rails_progress = document.getElementById('rails-progress')
+  const flutter_progress = document.getElementById('flutter-progress')
+  const php_progress = document.getElementById('php-progress')
   const navbar = document.getElementById("navbar");
   const sticky = navbar.offsetTop;
   const y_level = skills.offsetTop -600;
   console.log(y_level);
   if (window.scrollY > y_level) {
-    skill.forEach(element => { 
-      element.classList.add("animate")
-    });
+    html_progress.classList.add("html_progress")
+    js_progress.classList.add("js_progress")
+    react_progress.classList.add("react_progress")
+    rails_progress.classList.add("rails_progress")
+    flutter_progress.classList.add("flutter_progress")
+    php_progress.classList.add("php_progress")
   }
   if (window.scrollY > sticky) {
     navbar.classList.add("sticky")
