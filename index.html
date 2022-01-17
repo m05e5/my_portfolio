@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
+  <title>Caleb Moses H.T.</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
@@ -17,7 +17,7 @@
       <div class="nav-div">
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about_me"> about me</a>
-        <a class="nav-link" href="#"> Link</a>
+        <a class="nav-link" href="#contact_me"> Contact me</a>
       </div>
     </nav>
     <div class="header-content" id="home">
@@ -58,13 +58,13 @@
         <h2 class="about-title">About me</h2>
         <div class="divider"></div>
         <p class="about-desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Error quisquam similique voluptatum eius enim. Itaque reprehenderit 
-          temporibus sequi deleniti eius quibusdam, alias iure cum! Porro, nihil 
-          architecto? Adipisci, maxime nesciunt Lorem ipsum dolor sit amet, 
-          consectetur adipisicing elit. Quae suscipit blanditiis nisi accusantium 
-          officiis, aperiam sunt fugit neque, qui sit deserunt vitae beatae, 
-          voluptatum autem doloribus facilis aut sequi reiciendis.
+          Hello World!I am a full-stack mobile/web developer specializing in building
+           Web/Mobile apps, I'm passionate about coding, debugging, artificial 
+           intelligence, and robotics.  
+           I'm good at teamwork and like to do research. I'm good at solving 
+           problems and debugging and I like to learn new Programming Languages. 
+           I'm ready for remote and presential work.
+
         </p>
 
         <div class="about-details">
@@ -221,8 +221,23 @@
      
     </div>
   </section>
-  <section class="contact-me-section">
-
+  <section class="contact-me-section" id="contact_me">
+    <div class="contact-me-content">
+      <div class="contact-left">
+        <h2 class="contact-title">Contact Me</h2>
+        <div class="divider"></div>
+        <form id="form" class="contact-form" action="https://formspree.io/f/mjvjrozl" method="POST">
+          <input type="text" name="name" id="name" class="name-email" placeholder="Enter your name" maxlength="30" required>
+          <input type="email" name="email" id="email" class="name-email" placeholder="Enter your email" required>
+          <textarea name="message" id="message" rows="6" class="message" maxlength="500" placeholder="write your message here" required></textarea>
+          <p id="form-state"></p>
+          <button type="submit" id="submit" class="button contact-button" >Get it Touch</button>
+      </form>
+      </div>
+      <div class="contact-right">
+        
+      </div>
+    </div>
   </section>
 </body>
 </html>
