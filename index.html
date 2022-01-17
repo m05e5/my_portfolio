@@ -10,33 +10,36 @@
 </link>
   <script src='main.js'></script>
 </head>
-<body>
+<body onscroll="myFunction()">
   <div class="header">
-    <nav class="nav justify-content-center">
-      <a class="nav-link active" href="#">Active link</a>
-      <a class="nav-link" href="#">Link</a>
-      <a class="nav-link disabled" href="#">Disabled link</a>
+    <nav class="nav" id="navbar">
+      <h2>Caleb Moses H.T.</h2>
+      <div class="nav-div">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about_me"> about me</a>
+        <a class="nav-link" href="#"> Link</a>
+      </div>
     </nav>
-    <div class="header-content">
+    <div class="header-content" id="home">
       <div class="header-text">
         <h5>HI THERE!</h2>
         <h1 class="profile-name">I'm Caleb Moses</h1>
         <h4 class="profile-state">FULL-STACK WEB DEVELOPER</h2>
         <div class="links-div">
           <a class="link" href="#">
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook head_link"></i>
           </a>
           <a class="link" target="_blank" href="https://www.linkedin.com/in/caleb-moses/">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin head_link"></i>
           </a>
           <a class="link" target="_blank" href="https://github.com/m05e5">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github head_link"></i>
           </a>
           <a class="link" href="#">
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter head_link"></i>
           </a>
           <a class="link" href="#">
-            <i class="fab fa-angellist"></i>
+            <i class="fab fa-angellist head_link"></i>
           </a>
         </div>
         <a class="hire-me" href="#">Hire me</a>
@@ -46,7 +49,7 @@
       </div>
     </div>
   </div>
-  <section class="about-me-section">
+  <section class="about-me-section" id="about_me">
     <div class="about-me-card">
       <div class="about-image-div">
         <img class='about-image' src="./assets/profile2.png" alt="profile1">
@@ -91,21 +94,124 @@
     </div>
 
   </section>
-  <section class="skills-section">
-    <div class="skill-content">
+  <section class="skills-section" id='skills'>
+    <div class="skill-content" >
       <h2 class="about-title">Skills</h2>
-      <div class="skills">
+      <div class="skills" >
         <div class="skill">
-          <h3></h3>
+          <p class="skill_name">HTML/CSS</p>
+          <p class="skill_name">90%</p>
           <div class="skill-bar">
-            <div class="skill-bar-progress"></div>
+            <div class="skill-bar-progress" id="html-progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skill_name">Javascript(ES6)</p>
+          <p class="skill_name">80%</p>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" id="js-progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skill_name">React/Redux</p>
+          <p class="skill_name">80%</p>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" id="react-progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skill_name">Ruby on Rails</p>
+          <p class="skill_name">80%</p>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" id="rails-progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skill_name">Flutter</p>
+          <p class="skill_name">75%</p>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" id="flutter-progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skill_name">PHP(Laravel)</p>
+          <p class="skill_name">75%</p>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" id="php-progress"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="projects">
-    
+  <section class="services-section">
+    <h2 class="services-title">Services</h2>
+    <div class="services">
+      <div class="service">
+        <div class="service-icon-div">
+          <i class="fa fa-code service-icon"></i>
+        </div>
+        <h3>WEB DEVELOPMENT</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Obcaecati, aliquid minus accusantium debitis hic incidunt
+           quisquam quis ipsam fugit, fugiat natus perspiciatis.
+        </p>
+      </div>
+      <div class="service">
+        <div class="service-icon-div">
+          <i class="fa fa-tablet-alt service-icon"></i>
+        </div>
+        <h3>MOBILE DEVELOPMENT</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Obcaecati, aliquid minus accusantium debitis hic incidunt
+           quisquam quis ipsam fugit, fugiat natus perspiciatis.
+        </p>
+      </div>
+      <div onmouseover="mychange()" class="service">
+        <div class="service-icon-div">
+          <i class="fa fa-laptop service-icon"></i>
+        </div>
+        <h3>RESPONSIVE DESIGN</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Obcaecati, aliquid minus accusantium debitis hic incidunt
+           quisquam quis ipsam fugit, fugiat natus perspiciatis.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="projects-section">
+    <h2 class="about-title">Some Projects</h2>
+    <div class="divider"></div>
+    <div class="projects">
+      <div class="project">
+        <div class="p_img_div">
+          <img class='p_img' src="./assets/readme-img.PNG" alt="profile1">
+        </div>
+        <div class="p_details">
+
+        </div>
+      </div>
+      <div class="project">
+        <div class="p_img_div">
+          <img class='p_img' src="./assets/project2.png" alt="profile1">
+        </div>
+        <div class="p_details">
+
+        </div>
+      </div>
+      <div class="project">
+        <div class="p_img_div">
+          <img class='p_img' src="./assets/project3.png" alt="profile1">
+        </div>
+        <div class="p_details">
+
+        </div>
+      </div>
+     
+    </div>
   </section>
 </body>
 </html>
+
