@@ -29,7 +29,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   font-weight: 500;
-  font-style: oblique;
   font-size: 20px;
   padding-right: 5%;
 }
