@@ -11,7 +11,6 @@ function myFunction() {
   const navbar = document.getElementById("navbar");
   const sticky = navbar.offsetTop;
   const y_level = skills.offsetTop -600;
-  console.log(y_level);
   if (window.scrollY > y_level) {
     html_progress.classList.add("html_progress")
     js_progress.classList.add("js_progress")
