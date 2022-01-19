@@ -654,7 +654,7 @@ width: 45%;
   }
 
   .services-section::before {
-    background-size: auto 100vh;
+    background-size: auto 100%;
   }
 
   .projects {
@@ -663,8 +663,11 @@ width: 45%;
 
   .contact-me-section {
     height: auto;
-    
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .contact-me-section::before {
+    background-size: auto 100%;
   }
 
   .contact-me-content {
