@@ -12,6 +12,7 @@ body {
   background-size: cover;
   height: 100vh;
   min-height: 700px;
+  max-height: 1000px;
   width: 100%;
 }
 
@@ -139,6 +140,7 @@ body {
 .about-me-section {
   height: 90vh;
   min-height: 600px;
+  max-height: 700px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -148,6 +150,7 @@ body {
 .about-me-card {
   height: 75%;
   width: 65%;
+  max-width: 1000px;
   background-color: white;
   box-shadow: 0 0 8px rgb(223, 223, 223);
   display: flex;
@@ -232,6 +235,7 @@ body {
 
 .skills {
   width: 90%;
+  max-width: 1400px;
   height: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -486,6 +490,7 @@ width: 45%;
   position: relative;
   height: 80%;
   width: 70%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -616,4 +621,73 @@ width: 45%;
   .foot-links-div {
     width: 70%;
   }
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    max-height: 700px;
+  }
+
+  .about-me-section {
+    max-height: none;
+    height: fit-content;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .about-me-card {
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
+    width: 60%;
+  }
+
+  .about-image-div {
+    height: 300px;
+  }
+
+  .about-image {
+    margin: 0;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .services-section::before {
+    background-size: auto 100vh;
+  }
+
+  .projects {
+    justify-content: center;
+  }
+
+  .contact-me-section {
+    height: auto;
+    
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .contact-me-content {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .contact-left {
+    width: 90%;
+  }
+
+  .contact-right {
+    width: 90%;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .contact_info {
+    margin-top: 1rem;
+  }
+
+  .foot-links-div {
+    width: 50%;
+  } 
 }
