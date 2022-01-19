@@ -9,6 +9,7 @@ function myFunction() {
   const flutter_progress = document.getElementById('flutter-progress')
   const php_progress = document.getElementById('php-progress')
   const navbar = document.getElementById("navbar");
+  const space_compensation = document.querySelector('.space_compensation')
   const sticky = navbar.offsetTop;
   const y_level = skills.offsetTop -600;
   if (window.scrollY > y_level) {
@@ -21,8 +22,10 @@ function myFunction() {
   }
   if (window.scrollY > sticky) {
     navbar.classList.add("sticky")
+    space_compensation.style.display = 'block'
   } else {
     navbar.classList.remove("sticky");
+    space_compensation.style.display = 'none'
   }
   // else {
   //   skills.classList.remove("sticky");

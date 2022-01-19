@@ -45,6 +45,12 @@ body {
   margin: 0;
 }
 
+.space_compensation {
+  height: 50px;
+  display: none;
+  background-color: transparent;
+}
+
 .sticky {
   position: fixed;
   top: 0;
