@@ -375,6 +375,7 @@ width: 45%;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 95%;
+  max-width: 1500px;
   margin-top: 2rem;
   padding-bottom: 5rem;
 }
