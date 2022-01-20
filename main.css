@@ -583,6 +583,10 @@ width: 45%;
     width: 50%;
   }
 
+  .links-div {
+    width: 55%;
+  }
+
   .about-me-card {
     width: 85%;
   }
@@ -693,4 +697,26 @@ width: 45%;
   .foot-links-div {
     width: 50%;
   } 
+}
+
+@media only screen and (max-width: 750px) {
+  .skills {
+    flex-direction: column;
+  }
+
+  .links-div {
+    width: 35%;
+  }
+
+  .skill {
+    width: 90%;
+  }
+
+  .header-text {
+    width: 90%;
+  }
+
+  .header-profile-div {
+    display: none;
+  }
 }
