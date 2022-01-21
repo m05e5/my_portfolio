@@ -860,6 +860,11 @@ width: 45%;
   .project_img2 {
     width: 90vw;
   }
+
+  .about-detail {
+    display: block;
+    margin-top: 1rem;
+  }
 }
 
 /* styling of my modal ------------------------------------------ */
