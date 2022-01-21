@@ -1,6 +1,6 @@
 
 
-function myFunction() {
+const myFunction = () => {
   const skills = document.getElementById("skills");
   const html_progress = document.getElementById('html-progress')
   const js_progress = document.getElementById('js-progress')
@@ -43,7 +43,27 @@ function myFunction() {
   };
 }
 
+const modalDisplay = () => {
+  console.log('hello')
+  const modal = document.querySelector('.nav_modal-background');
+  const opener = document.querySelector('#nav_modal-displayer');
+  const closer = document.querySelector('.X');
+  const modalNavLink = document.querySelectorAll('.modal_nav_link');
 
+  function closeModal() {
+    modal.style.visibility = 'hidden';
+  }
+
+  function callp() {
+    console.log('visible');
+    modal.style.visibility = 'visible';
+  }
+  modalNavLink.forEach((link) => {
+    link.onclick = closeModal;
+  });
+  opener.onclick = callp;
+  closer.onclick = closeModal;
+};
 
 
 

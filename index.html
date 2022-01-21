@@ -19,7 +19,34 @@
 </link>
   <script src='main.js'></script>
 </head>
-<body onscroll="myFunction()">
+<body onscroll="myFunction()" onload="modalDisplay()">
+  <div class="nav_modal-background">
+    <div class="nav_modal">
+      <div class="nav_modal-header">
+        <h2 class="nav_modal-title">Caleb Moses H.T.</h2>
+        <i class="fa fa-times service-icon X"></i>
+        <!-- <div class="X">
+          <p>X</p>
+        </div> -->
+      </div>
+      <div class="nav_modal-body">
+          <ul class="nav_ul">
+            <li class="nav_li">
+              <a class=" modal_nav_link " href="#home">Home</a>
+            </li>
+            <li class="nav_li">
+              <a class="modal_nav_link" href="#about_me">About me</a>
+            </li>
+            <li class="nav_li">
+              <a class="modal_nav_link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav_li">
+              <a class="modal_nav_link" href="#contact_me">Contact me</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
   <div class="header">
     <div class="space_compensation"></div>
     <nav class="nav" id="navbar">
@@ -28,6 +55,9 @@
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about_me"> About me</a>
         <a class="nav-link" href="#contact_me"> Contact me</a>
+      </div>
+      <div class="mobile_menu_icon">
+        <i class="fa fa-bars service-icon"  id="nav_modal-displayer"></i>
       </div>
     </nav>
     <div class="header-content" id="home">
@@ -252,7 +282,7 @@
       </div>
      
     </div> -->
-    <div class='projects'>
+    <div class='projects' id="portfolio">
       <div class="project">
         <img class='project_img' src="./assets/comp_project11.PNG" alt="project1">
         <div class="p_details">
@@ -386,6 +416,7 @@
       </div>
     </div>
   </section>
+  
 </body>
 </html>
 
