@@ -734,6 +734,10 @@ width: 45%;
     max-height: 700px;
   }
 
+  .nav-div {
+    width: 60%;
+  }
+
   .about-me-section {
     max-height: none;
     height: fit-content;
@@ -819,6 +823,16 @@ width: 45%;
 }
 
 @media only screen and (max-width: 750px) {
+  .nav-div {
+    display: none;
+  }
+
+  .mobile_menu_icon {
+    display: block;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+
   .skills {
     flex-direction: column;
   }
@@ -844,17 +858,9 @@ width: 45%;
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .nav-div {
-    display: none;
-  }
+/* @media only screen and (max-width: 550px) {
 
-  .mobile_menu_icon {
-    display: block;
-    padding-right: 2rem;
-    cursor: pointer;
-  }
-}
+} */
 
 @media only screen and (max-width: 410px) {
   .project_img {
